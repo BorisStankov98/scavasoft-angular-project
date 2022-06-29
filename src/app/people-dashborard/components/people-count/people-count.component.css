@@ -1,0 +1,11 @@
+.section-details{
+    background-color: #393E46;
+    display: flex;
+    justify-content: center;
+}
+.details-container{
+    width: 80%;
+}
+.details-content{
+    color:#EEEEEE
+}

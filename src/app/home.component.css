@@ -1,0 +1,27 @@
+.section-home{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.home-container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.home-content{
+    color: #EEE;
+}
+
+.intro{
+    margin-bottom: 50px;
+    display: flex;
+}
+.intro-reverse{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+p {
+    font-size: 25px;
+}

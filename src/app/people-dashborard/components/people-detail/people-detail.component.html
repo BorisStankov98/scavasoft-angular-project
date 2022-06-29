@@ -1,0 +1,57 @@
+<!-- <section class="section displaying-object d-flex-center">
+    <div class="container d-flex-center">
+      <div class="container-content">
+        <div class="container-people">
+            <div *ngIf="editing">
+                <input type="text"
+                [value]="detail.name"
+                (input)="onNameChange(name.value)"
+                #name
+                >
+            </div>
+            <div *ngIf="!editing">
+                <h2> name: {{detail.name}}</h2>
+            </div>
+            <h5>age: {{detail.age}}</h5>
+            <h6>
+              Work status: 
+              <span class="status" [ngClass] ='{
+              "isWorking": detail.isWorking,
+              "notWorking": !detail.isWorking
+              }'>
+            </span>
+           </h6>
+           <p>Number of skills: {{detail.skills?.length  || 0}} </p>
+           <button
+            (click)="toggleEdit()"
+           >
+            {{ editing ? 'Done' : 'Edit'}}
+           </button>
+           <button
+            (click)="onRemove()"
+           >
+            Remove
+           </button>
+        </div>
+    </div>
+    </div>
+  </section> -->
+  <section class="section-people">
+    <div class="people-container">
+      <div class="people-content">
+        <div class="person-container"
+          *ngFor="let person of items"
+        >
+          <div class="person">
+            <h2>Name: {{person.name}} </h2>
+            <h3>Age: {{person.age}} </h3>
+            <h3>Skills: {{person.skills? person.skills : 'No skills'}} </h3>
+            <h4>Work status: <span class="status" [ngClass] ='{
+              "isWorking": person.isWorking,
+              "notWorking": !person.isWorking
+              }'></span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>

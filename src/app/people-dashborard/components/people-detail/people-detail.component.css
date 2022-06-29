@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    width: 80%;
+}
+.d-flex-center{
+    display: flex;
+    justify-content: space-around;
+}
+.section-people{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.people-container {
+   width: 80%;
+}
+.people-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.person-container {
+    background-color: #3f4349;
+    border-radius: 15px;
+    width: 300px;
+    margin-bottom: 5px;
+    padding: 30px 30px 30px 0px;
+}
+.person{
+    color:#EEEE;
+    line-height: 30px;
+    
+}
+.isWorking{
+    background-color:green
+}
+.notWorking{
+    background-color:red
+}
+.status{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}

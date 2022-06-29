@@ -1,0 +1,12 @@
+.not-found{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.not-found a{
+    text-decoration: none;
+}
+.not-found a:visited{
+    color: #EEE;
+}
